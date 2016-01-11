@@ -31,6 +31,11 @@ public class baseMovement : MonoBehaviour {
 			Destroy (col.gameObject);
 		}
 
+		if (col.gameObject.tag == "leg") {
+			print ("The player pick up the leg");
+			Destroy (col.gameObject);
+		}
+
 		if (col.gameObject.tag == "ground") {
 			isJumping = false;
 		}
